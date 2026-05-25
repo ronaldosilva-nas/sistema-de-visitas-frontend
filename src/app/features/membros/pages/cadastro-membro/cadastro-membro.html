@@ -1,1 +1,13 @@
-<p>cadastro-membro works!</p>
+<h1>Formulário de cadastro</h1>
+
+<div *ngIf="page">
+  <ul *ngFor="let membro of page.content">
+    <li>{{ membro.nome }}</li>
+    <li>{{ membro.endereco }}</li>
+    <li>{{ membro.bairro }}</li>
+    <li>{{ membro.numero }}</li>
+    <li>{{ membro.cidade }}</li>
+    <li>{{ membro.telefone }}</li>
+    <li>{{ membro.observacao }}</li>
+  </ul>
+</div>
