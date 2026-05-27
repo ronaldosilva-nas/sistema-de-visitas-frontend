@@ -1,0 +1,23 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 500px;
+    width: 1100px;
+    background: #22859e;
+}
+
+.box-left {
+    background: #0f3f4b;
+    width: 400px;
+}
+
+.box-form {
+    background: #ffffff;
+}

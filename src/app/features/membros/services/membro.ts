@@ -15,4 +15,8 @@ export class MembroService {
   listar() {
     return this.http.get<Page<Membro>>(this.api);
   }
+
+  adicionarMembro(membro: Membro) {
+    return this.http.post<Membro>(this.api, membro);
+  }
 }

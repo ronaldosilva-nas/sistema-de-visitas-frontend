@@ -1,13 +1,53 @@
-<h1>Formulário de cadastro</h1>
+<!--    <div *ngIf="page"> -->
+<!--    <ul *ngFor="let membro of page.content"> -->
+<!--        <li>{{ membro.nome }}</li> -->
+<!--        <li>{{ membro.endereco }}</li> -->
+<!--        <li>{{ membro.bairro }}</li> -->
+<!--        <li>{{ membro.numero }}</li> -->
+<!--        <li>{{ membro.cidade }}</li> -->
+<!--        <li>{{ membro.telefone }}</li> -->
+<!--        <li>{{ membro.observacao }}</li> -->
+<!--    </ul> -->
+<!--    </div> -->
 
-<div *ngIf="page">
-  <ul *ngFor="let membro of page.content">
-    <li>{{ membro.nome }}</li>
-    <li>{{ membro.endereco }}</li>
-    <li>{{ membro.bairro }}</li>
-    <li>{{ membro.numero }}</li>
-    <li>{{ membro.cidade }}</li>
-    <li>{{ membro.telefone }}</li>
-    <li>{{ membro.observacao }}</li>
-  </ul>
-</div>
+<main class="container">
+    <div class="box-left">
+
+    </div>
+
+    <form class="box-form" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <h1>Cadastro de visitas</h1>
+
+        <h5>Dados Pessoais</h5>
+
+        <!--Campo de nome-->
+        <label for="nome">Nome</label>
+        <input formControlName="nome" id="nome" type="text" placeholder="Nome">
+
+        <!--Campo de telefone-->
+        <label for="telefone">Telefone</label>
+        <input formControlName="telefone" id="telefone" type="text" placeholder="Telefone">
+        
+        <!--Campo de endereço-->
+        <label for="endereco">Endereço</label>
+        <input formControlName="endereco" id="endereco" type="text" placeholder="Endereço">
+
+        <!--Campo de numero-->
+        <label for="numero">Número</label>
+        <input formControlName="numero" id="numero" type="number" placeholder="Número">
+
+        <!--Campo de bairro-->
+        <label for="bairro">Bairro</label>
+        <input formControlName="bairro" id="bairro" type="text" placeholder="Bairro">
+
+        <!--Campo de cidade-->
+        <label for="cidade">Cidade</label>
+        <input formControlName="cidade" id="cidade" type="text" placeholder="Cidade">
+
+        <!--Campo de observação-->
+        <label for="observacao">Observação</label>
+        <input formControlName="observacao" id="observacao" type="text" placeholder="Observação">
+    
+        <button type="submit">Cadastrar</button>
+    </form>
+</main>
