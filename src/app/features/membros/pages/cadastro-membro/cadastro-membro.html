@@ -11,43 +11,79 @@
 <!--    </div> -->
 
 <main class="container">
-    <div class="box-left">
+
+    <div class="card">
+
+        <div class="box-left">
+
+        </div>
+
+        <form class="box-form" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <h1>Cadastro de visitas</h1>
+
+            <h5>Dados Pessoais</h5>
+
+            <div class="line">
+
+                <!--Campo de nome-->
+                <div class="field">
+                    <label for="nome">Nome</label>
+                    <input formControlName="nome" id="nome" type="text" placeholder="Nome">
+                </div>
+
+                <!--Campo de telefone-->
+                <div class="field">
+                    <label for="telefone">Telefone</label>
+                    <input formControlName="telefone" id="telefone" type="text" placeholder="Telefone">
+                </div>
+
+            </div>
+
+            <div class="line">
+
+                <!--Campo de endereço-->
+                <div class="field">
+                    <label for="endereco">Endereço</label>
+                    <input formControlName="endereco" id="endereco" type="text" placeholder="Endereço">
+                </div>
+
+                <!--Campo de numero-->
+                <div class="field">
+                    <label for="numero">Número</label>
+                    <input formControlName="numero" id="numero" type="number" placeholder="Número">
+                </div>
+
+            </div>
+
+            <div class="line">
+
+                <!--Campo de bairro-->
+                <div class="field">
+                    <label for="bairro">Bairro</label>
+                    <input formControlName="bairro" id="bairro" type="text" placeholder="Bairro">
+                </div>
+
+                <!--Campo de cidade-->
+                <div class="field">
+                    <label for="cidade">Cidade</label>
+                    <input formControlName="cidade" id="cidade" type="text" placeholder="Cidade">
+                </div>
+
+            </div>
+
+            <div class="line">
+                
+                <div class="field">
+                    <!--Campo de observação-->
+                    <label for="observacao">Observação</label>
+                    <textarea formControlName="observacao" id="observacao" placeholder="Observação"></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
 
     </div>
 
-    <form class="box-form" [formGroup]="formulario" (ngSubmit)="onSubmit()">
-        <h1>Cadastro de visitas</h1>
-
-        <h5>Dados Pessoais</h5>
-
-        <!--Campo de nome-->
-        <label for="nome">Nome</label>
-        <input formControlName="nome" id="nome" type="text" placeholder="Nome">
-
-        <!--Campo de telefone-->
-        <label for="telefone">Telefone</label>
-        <input formControlName="telefone" id="telefone" type="text" placeholder="Telefone">
-        
-        <!--Campo de endereço-->
-        <label for="endereco">Endereço</label>
-        <input formControlName="endereco" id="endereco" type="text" placeholder="Endereço">
-
-        <!--Campo de numero-->
-        <label for="numero">Número</label>
-        <input formControlName="numero" id="numero" type="number" placeholder="Número">
-
-        <!--Campo de bairro-->
-        <label for="bairro">Bairro</label>
-        <input formControlName="bairro" id="bairro" type="text" placeholder="Bairro">
-
-        <!--Campo de cidade-->
-        <label for="cidade">Cidade</label>
-        <input formControlName="cidade" id="cidade" type="text" placeholder="Cidade">
-
-        <!--Campo de observação-->
-        <label for="observacao">Observação</label>
-        <input formControlName="observacao" id="observacao" type="text" placeholder="Observação">
-    
-        <button type="submit">Cadastrar</button>
-    </form>
 </main>
