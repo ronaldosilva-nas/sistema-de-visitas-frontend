@@ -23,56 +23,72 @@
 
             <h5>Dados Pessoais</h5>
 
+            <!-- Classe line -> organiza o campo nome -->
             <div class="line">
 
-                <!--Campo de nome-->
+                <!-- Classe field -> agrupa label e input do campo nome -->
                 <div class="field">
+                    <!-- Campo de nome -->
                     <label for="nome">Nome</label>
                     <input formControlName="nome" id="nome" type="text" placeholder="Nome">
                 </div>
 
-                <!--Campo de telefone-->
+            </div>    
+
+            <!-- Classe line -> organiza os campos telefone e cidade -->
+            <div class="line">
+
+                <!-- Classe field -> agrupa label e input do campo telefone -->
                 <div class="field">
+                    <!-- Campo de telefone -->
                     <label for="telefone">Telefone</label>
                     <input formControlName="telefone" id="telefone" type="text" placeholder="Telefone">
                 </div>
 
-            </div>
-
-            <div class="line">
-
-                <!--Campo de endereço-->
+                <!-- Classe field -> agrupa label e input do campo cidade -->
                 <div class="field">
-                    <label for="endereco">Endereço</label>
-                    <input formControlName="endereco" id="endereco" type="text" placeholder="Endereço">
-                </div>
-
-                <!--Campo de numero-->
-                <div class="field">
-                    <label for="numero">Número</label>
-                    <input formControlName="numero" id="numero" type="number" placeholder="Número">
-                </div>
-
-            </div>
-
-            <div class="line">
-
-                <!--Campo de bairro-->
-                <div class="field">
-                    <label for="bairro">Bairro</label>
-                    <input formControlName="bairro" id="bairro" type="text" placeholder="Bairro">
-                </div>
-
-                <!--Campo de cidade-->
-                <div class="field">
+                    <!-- Campo de cidade -->
                     <label for="cidade">Cidade</label>
                     <input formControlName="cidade" id="cidade" type="text" placeholder="Cidade">
                 </div>
 
+            </div>    
+
+            <!-- Classe line -> organiza o campo endereço -->
+            <div class="line">
+
+                <!-- Classe field -> agrupa label e input do campo endereço -->
+                <div class="field">
+                <!-- Campo de endereço -->
+                    <label for="endereco">Endereço</label>
+                    <input formControlName="endereco" id="endereco" type="text" placeholder="Endereço">
+                </div>
+
             </div>
 
+            <!-- Classe line -> organiza o campo número e bairro -->
+            <div class="line">
+
+                <!-- Classe field -> agrupa label e input do campo número -->
+                <div class="field">
+                <!--Campo de numero-->
+                    <label for="numero">Número</label>
+                    <input formControlName="numero" id="numero" type="number" placeholder="Número">
+                </div>
+
+                <!-- Classe field -> agrupa label e input do campo bairro -->
+                <div class="field">
+                <!--Campo de bairro-->
+                    <label for="bairro">Bairro</label>
+                    <input formControlName="bairro" id="bairro" type="text" placeholder="Bairro">
+                </div>
+
+            </div>
+
+            <!-- Classe line -> organiza o campo observação -->
             <div class="line">
                 
+                <!-- Classe field -> agrupa label e input do campo observação -->
                 <div class="field">
                     <!--Campo de observação-->
                     <label for="observacao">Observação</label>
@@ -83,6 +99,7 @@
 
             <button type="submit">Cadastrar</button>
         </form>
+        
 
     </div>
 
