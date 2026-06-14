@@ -47,7 +47,22 @@ export class CadastroMembro implements OnInit{
   }
 
   onSubmit() {
-    throw new Error('Method not implemented.');
+    if(this.formulario.invalid) {
+      return;
+    }
+
+    const membro = this.formulario.value;
+
+    this.membroService.adicionarMembro(membro)
+      .subscribe({
+        next: () => {
+          alert('Cadastrado com sucesso!');
+          this.formulario.reset();
+        },
+        error: () => {
+          alert('Erro ao cadastrar. Por favor, tente novamente.');
+        }
+      });
   }
 
 }
